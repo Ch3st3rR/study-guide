@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Gaegu&display=swap');
+
+
+
+
+/* VÍDEO DE FUNDO */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+  opacity: 1;
+}
+
+/* CAMADA ESCURA ACIMA DO VÍDEO */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* GARANTIR QUE O VÍDEO APAREÇA */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: none;
+}
+
+
+.container {
+    max-width: 1100px;
+    background-color: #000000;
+    position: relative;
+    margin: 50px auto;
+    padding: 20px 50px;
+}
+
+.bold {
+    font-weight: bold;
+    background-color: #000000;
+}
+
+/* header */
+.header {
+    text-align: center;
+    
+}
+
+.main-title {
+    font-size: 40px;
+    
+}
+
+.main-paragraph {
+    font-style: italic;
+    
+}
+
+/* IMAGES DESTAQUE */
+
+.featured-image {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Biografia */
+.biography-container {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+
+/* Quotes */
+.quotes-container {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+
+.quotes-container blockquote {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.quotes-container p {
+    font-style: italic;
+}
+
+/* Curiosidades */
+.curiosidades-container {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+
+.curiosidades-container li {
+    height:60px;
+}
+
+/* Imagem bold */
+.img-bold {
+    font-weight: center;
+    text-align: center;
+}
+
+
+
+/* fonts */
+
+@font-face {
+  font-family: 'font';
+  src: url('fonts/Cabin_Sketch/CabinSketch-Regular.ttf') format('truetype');
+}
+
+
+body {
+  font-family: 'font', 'Cabin Sketch', 'Gaegu', sans-serif;
+}
+
+
+/* text color */
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+
+}
+
+p {
+    color: #fff;
+}
+
+.text-white {
+    color: #000;
+}
+
+ul {
+    color: #fff;
+}
+
+figcaption {
+    color: #fff;
+}
+
+/* imagem destaque */
+
+.featured-image img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+}
+
+/* button */
+button {
+  background-color: #1e1e1e;
+  color: #00ff5a;
+  border: 2px solid #00ff5a;
+  padding: 10px 20px;
+  font-family: 'Cabin Sketch', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+}
+
+button:hover {
+  background-color: #00ff5a;
+  color: #1e1e1e;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  button {
+    top: 10px;
+    left: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 15px 20px;
+  }
+
+  .main-title {
+    font-size: 28px;
+  }
+
+  .quotes-container blockquote {
+    font-size: 20px;
+  }
+}

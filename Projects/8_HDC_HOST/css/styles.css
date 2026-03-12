@@ -1,0 +1,430 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+p {
+    color: rgb(83, 72, 83); 
+}
+
+/* Navbar */
+.navbar-container {
+    width: 100%;
+    height: 80px;
+    background-color: #232a31;
+    padding: 0 2rem;
+}
+
+nav {
+    position: relative;
+}
+
+.logo {
+    width: 150px; /* ← coloque o tamanho desejado */
+    margin-top: 15px;
+}
+
+.navbar-items {
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-items li {   /* ← corrigido! */
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.navbar-items a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar-items a:hover {
+    color: #ccc;
+}
+
+.default-btn {
+    padding: 15px 20px;
+    background-color: #2cc76a;
+    border-radius: 5px;
+}
+
+.navbar-items .default-btn:hover {
+    background-color: #1e6770;
+    color: #fff;
+}
+
+/* main banner */
+.main-banner {
+    background-image: url("../img/foto.jpg");
+    background-size: over;
+    background-position: center;
+    padding: 10rem 0;
+}
+
+.main-banner h1,
+.main-banner p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: #000 3px 2px 3px;
+}
+
+.main-banner h1 {
+    font-size: 54px;
+}
+
+.main-banner p {
+    font-size: 32px;
+}
+
+/* Services */
+.services-container {
+    padding: 5rem 0;
+}
+
+section ul {
+    display: flex;
+    justify-content: space-between; /* distribui os itens: esquerda, centro, direita */
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap; /* permite quebrar em telas pequenas */
+    padding: 0;
+}
+
+section li {
+    list-style: none;
+    flex: 0 1 30%; /* cada item ocupa ~30% do espaço */
+    text-align: center;
+    padding: 20px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.feature {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-radius: 30px;
+}
+
+
+.fas {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.fa-shield-alt { color: #bbffd6; }
+.fa-rocket { color: #ff7878; }
+.fa-comments { color: #ffbb7b; }
+
+/* Prices and Plans */
+.pricing-container {
+    padding: 5rem 0;
+    text-align: center;
+    background-color: #111; /* fundo escuro */
+    color: #fff;
+}
+
+.pricing-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-container p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 3rem;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* espaço entre os planos */
+    flex-wrap: wrap; /* para mobile */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.plan {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    overflow: hidden;
+    flex: 1 1 250px; /* cada plano mínimo 250px */
+    max-width: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.plan ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.plan li {
+    padding: 15px 10px;
+    border-bottom: 1px solid #333;
+    font-size: 16px;
+}
+
+.plan li:last-child {
+    border-bottom: none;
+}
+
+/* Price circle */
+.plan .price {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #2cc76a;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 20px; /* espaço maior acima e abaixo */
+}
+
+/* Plan name */
+.plan .plan-name {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0;
+    background-color: #202020;
+}
+
+/* Button */
+.plan .plan-btn {
+    display: block;
+    width: 80%;
+    margin: 20px auto 30px;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #2cc762;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.plan .plan-btn:hover {
+    background-color: #28a45a;
+}
+
+/* Recommended Plan */
+.plan.recommended .price,
+.plan .plan-btn.recommended {
+    background-color: #28a45a;
+    color: #fff;
+}
+
+
+/* search domain */
+.searchdomain-container {
+    background-color: #2e414d;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.searchdomain-container h2 {
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.searchdomain-container p {
+    color: #d5d5d5;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.searchdomain-container input {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.searchdomain-container input[type="text"] {
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.searchdomain-container input[type="submit"] {
+    background-color: #629e77;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: .15;
+}
+
+.searchdomain-container input[type="submit"]:hover {
+opacity: 1;
+
+}
+
+/* contact form */
+.contact-container {
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+}
+
+.contact-container textarea {
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+
+.contact-container input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #2cc76a;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0 100px; 
+}
+
+/* responsiveness */
+
+/* small laptops from 1100 px */
+@media (max-width: 1100px) {
+    .plans-container {
+        width: 95%;
+    }
+
+    .plan {
+        margin: 0 5px;
+    }
+}
+
+/* tablet 900px */
+@media (max-width: 900px) {
+
+    .main-banner p {
+        padding: 0 6rem;
+    }
+
+    .searchdomain-container {
+        padding: 2rem 4rem;
+    }
+}
+
+/* phone 576px */
+@media (max-width: 576px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .navbar-items li {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .main-banner p {
+        padding: 0 2rem;
+    }
+
+    .services-container ul {
+        flex-direction: column;
+    }
+
+    .plans-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2rem;
+        margin-bottom: 15px;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.searchdomain-container h2 {
+    font-size: 28px;
+}
+
+.searchdomain-container input[type="text"] {
+    width: 100%;
+}
+
+.contact-container {
+    padding: 3rem 2rem;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    margin: 10px 0;
+}
