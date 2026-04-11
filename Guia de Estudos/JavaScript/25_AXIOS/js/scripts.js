@@ -6,8 +6,15 @@ const getData = async() => {
 
     try {
 
-        const response = await axios.get("https://jsonplaceholder.typicode.com/users"
-
+        const response = await axios.get("https://jsonplaceholder.typicode.com/users", 
+            // 4 - Defining Headers
+            
+            {
+             headers: {
+                "Content-Type": "application/json",
+                custom: "header", 
+             },
+        }
         ); 
 
         console.log(response); 
@@ -52,3 +59,17 @@ const printData = async() => {
 };
 
 printData(); 
+
+
+// 5 - Post
+const form = document.querySelector("#post-form")
+const titleInput = document.querySelector("#title")
+const bodyInput = document.querySelector("#body")
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault(); 
+
+    axios.post("https://jsonplaceholder.typicode.com/post", {
+        body: {title: titleInput.value, body: bodyInput.value, userId: 1 },
+    })
+});
