@@ -1,12 +1,18 @@
+:root {
+  --white: #ffffff;
+  --secondary-color: #7aa7ba;
+  --primary-color-dark: #0d1a20;
+}
+
 * {
     margin: 0;
     padding: 0; 
-     box-sizing: border-box;
-     font-family: Helvetica; 
+    box-sizing: border-box;
+    font-family: Helvetica; 
 }
 
 body {
-    background-image: linear-gradient(to right bottom, #7aa7ba, #0d1a20); 
+    background-image: linear-gradient(to right bottom, #c171c9, #0d1a20); 
 }
 
 .container {
@@ -29,7 +35,6 @@ body {
     font-size: 1.5rem;
     font-weight: 600; 
     color: var(--white);
-    cursor: pointer; 
 }
 
 .links {
@@ -46,23 +51,17 @@ body {
     transition: 0.3s; 
 }
 
+p {
+    color: white; 
+    
+}
+
+h4 {
+    color: white; 
+}
+
 .links div:hover {
     color: var(--secondary-color); 
-}
-
-.links div span {
-    font-size: 1.2rem; 
-}
-
-.links .shopping__cart {
-    height: 50px; 
-    width: 50px; 
-    display: grid;
-    place-content: center; 
-    border-radius: 100%;
-    font-size: 1.2rem;
-    color: var(--primary-color-dark); 
-    background-color: var(--white); 
 }
 
 .content {
@@ -70,67 +69,66 @@ body {
     flex: 1; 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .image {
     width: 100%;
-    animation: shoe-animation 3s infinite;
-    overflow: hidden;
+    animation: shoe-animation 3s ease-in-out infinite;
 }
 
 .image img {
     width: 100%;
-    max-width: 800px;
-    display: flex;
+    max-width: 600px;
+    margin-left: -100px; 
+    display: block;
     margin: auto;
     transform: rotate(-20deg); 
 }
 
 @keyframes shoe-animation {
-    0%{
-        transform: translateY(0px); 
-    }
-    70% {
-        transform: translateY(15px); 
-    }
-    100% {
-        transform: translateY(0px); 
-    }
+    0% { transform: translateY(0); }
+    50% { transform: translateY(15px); }
+    100% { transform: translateY(0); }
 }
 
 .header {
-    position: absolute;
-    top: 7rem;
-    left: 30%; 
-    transform: translateX(-50%); 
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 .header h1 {
     font-size: 3rem;
-    font-weight: 600;
     color: var(--white); 
 }
 
-.header p {
-    text-align: right;
-    color: var(--white); 
+.header button {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    background: var(--white);
+    color: var(--primary-color-dark);
     cursor: pointer;
-    transition: 0.3s; 
+    transition: 0.3s;
 }
 
-.header p:hover {
-    color: var(--secondary-color); 
+.header button:hover {
+    background: var(--secondary-color);
+    color: var(--white);
 }
 
 .featured__item {
     position: absolute;
+    left: -30%;
+    top: 60%; 
     transform: rotate(-90deg); 
 }
 
 .featured__item h4 {
     font-size: 1.5rem; 
-    font-weight: 600;
-    line-height: 1.5rem; 
     color: var(--white); 
 }
 
@@ -139,42 +137,28 @@ body {
 }
 
 .contact {
-    position: absolute;
-    right: 0;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
-    gap: 1rem;
-    color: var(--white);
-    transform: rotate(-90deg); 
-}
-
-.contact span {
-    height: 40px;
-    width: 40px; 
-    display: grid;
-    place-content: center;
-    border-radius: 100%;
-    font-size: 1.2rem;
-    color: var(--primary-color-dark); 
-    background-color: var(--white); 
-    transform: rotate(90deg); 
+    align-items: center;
+    gap: 0.5rem;
+    color: white; 
 }
 
 .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     padding: 1rem 0;
-    display: flex; 
-    align-items: center;
-    justify-content: space-between; 
 }
 
 .socials {
     display: flex;
-    align-items: center;
     gap: 2rem; 
 }
 
 .socials span {
-    font-size: 1rem;
-    font-weight: 500;
     color: var(--white); 
     cursor: pointer; 
     transition: 0.3s; 
@@ -186,30 +170,25 @@ body {
 
 .slides {
     font-size: 2rem;
-    font-weight: 600;
     color: var(--white); 
 }
 
 .slides span {
     font-size: 1rem;
-    font-weight: 400; 
 }
 
-@media (width < 640px) {
-    .links div:not(.shopping__cart) {
-        display: none; 
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .links div:not(:first-child) {
+        display: none;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .featured__item,
+    .contact {
+        display: none;
     }
 }
-
-.header {
-    top: 1rem; 
-}
-
-.feature__item {
-    left: -5rem; 
-}
-
-.contact {
-    right: -4rem; 
-}
-
