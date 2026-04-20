@@ -1,10 +1,10 @@
-:root {
+:root { /* Change site color */
   --white: #ffffff;
   --secondary-color: #7aa7ba;
   --primary-color-dark: #0d1a20;
 }
 
-* {
+* { /* Seletor Universal */
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
@@ -15,7 +15,9 @@ body {
     background-image: linear-gradient(to right bottom, #c171c9, #0d1a20); 
 }
 
-.container {
+ /* Principal Estructure - Remember when you asked about min-height? Here it ensures that the site occupies at least the full height of the browser screen (100vh). The flex-direction: column organizes the children (nav, content, footer) one below the other. */
+
+ .container {
     min-height: 100vh;
     max-width: 1300px;
     margin: auto;
@@ -24,27 +26,30 @@ body {
     flex-direction: column; 
 }
 
-.nav {
-    padding: 1rem 0;
+/* Use justify-content: space-between to push the logo to one side and the links to the other. | Usa justify-content: space-between para empurrar a logo para um lado e os links para o outro. */
+
+.nav { 
+    padding: 1rem 0; /* Distance */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 4.5rem;
     font-weight: 600; 
     color: var(--white);
 }
 
 .links {
+    font-size: 8.5rem;
     display: flex;
     align-items: center; 
-    gap: 2rem; 
+    gap: 5rem; /* Espaçamento | Spacing */
 }
 
 .links div {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Size | Tamanho */ 
     font-weight: 500;
     color: var(--white);
     cursor: pointer;
@@ -64,6 +69,8 @@ h4 {
     color: var(--secondary-color); 
 }
 
+/* : Tem um flex: 1. Isso é um truque inteligente: faz com que essa seção central "estique" para ocupar todo o espaço vazio entre o topo e o rodapé. | : It has a flex: 1. This is a clever trick: it makes that central section "stretch" to fill all the empty space between the top and the bottom. */
+
 .content {
     position: relative;
     flex: 1; 
@@ -77,6 +84,8 @@ h4 {
     animation: shoe-animation 3s ease-in-out infinite;
 }
 
+/* .image img: Contém a animação shoe-animation, que faz a imagem flutuar suavemente usando translateY. 👟✨ | .image img: Contains the shoe-animation, which makes the image float smoothly using translateY. 👟✨ */
+
 .image img {
     width: 100%;
     max-width: 600px;
@@ -85,6 +94,10 @@ h4 {
     margin: auto;
     transform: rotate(-20deg); 
 }
+
+/* Other Explanations - Various elements like: header, featured__item and footer use position: absolute. That remove the element of normal flow and allows to put in specific places ''on top'' for others. */
+
+/* Responsiveness @media - This block say to browser: If this screen will be less than 768px, change this rules... That hides same elements and decreases the text for the site works very much in smartphones */
 
 @keyframes shoe-animation {
     0% { transform: translateY(0); }
