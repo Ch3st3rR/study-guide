@@ -1,15 +1,17 @@
+# 📚 Study Guide
 
-This is my study guide for Front-End and Back-End development.
+This repository contains my journey learning Front-End and Back-End development.
 
-## 📚 Topics
+## 🚀 Topics
 - HTML
 - CSS
 - JavaScript
+- Java
 
 ## 🎯 Goal
-Improve my skills and build real projects.
+Improve my skills and build real-world projects.
 
-## 🚀 Progress
-- [ ] HTML basics
-- [ ] CSS layout
+## 📈 Progress
+- [x] HTML basics
+- [x] CSS layout
 - [ ] JavaScript fundamentals
