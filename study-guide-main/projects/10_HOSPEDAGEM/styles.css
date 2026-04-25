@@ -1,0 +1,109 @@
+/* Theme light / dark */
+:root {
+   --bg: #fff; 
+   --text: #111; 
+   --border: #e5e7eb;
+   --box: #f8fafc; 
+   --action: #2563ab; 
+}
+
+[data-tema="dark"] {
+   --bg: #0b1220; 
+   --text: #e5e7eb; 
+   --border: #1f2937;
+   --box: #111827; 
+   --action: #38db78; 
+}
+
+
+/* Styles standard */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.topo {
+    border-bottom: 1px solid var(--border); /* estava var(--borda) */
+}
+
+.topo .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .75rem 1rem;
+}
+
+.box {
+    border: 1px solid var(--border);
+    background-color: var(--box);
+    border-radius: .5rem;
+    padding: 2rem 1rem;
+    max-width: 80%;
+    margin: 1.5rem auto;
+}
+
+h1 {
+    margin-bottom: .5rem;
+    font-size: 1.6rem;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+form {
+    display: grid;
+    gap: .5rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    padding: .7rem .9rem;
+    border: 1px solid var(--border);
+    border-radius: .5rem;
+    background-color: var(--bg);
+    color: var(--text);
+
+}
+
+.btn {
+    padding: .6rem .9rem;
+    border: 1px solid var(--border);
+    background-color: var(--bg);
+    color: var(--text);
+    border-radius: .5rem;
+    cursor: pointer;
+  max-width: 250px;
+}
+
+.btn.primario {
+margin-top: 1rem;
+background-color: var(--action);
+color: #fff;
+}
+
+.baseboard {
+    border-top: 1px solid var(--border);
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+    margin-top: auto;
+}

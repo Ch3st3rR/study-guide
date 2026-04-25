@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute page: Green Day</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <!-- VÍDEO DE FUNDO -->
+    <video autoplay muted loop class="bg-video">
+        <source src="videos/rock-bg.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo em HTML5.
+    </video>
+
+    <!-- CAMADA ESCURA ENTRE O VÍDEO E O CONTEÚDO -->
+    <div class="overlay"></div>
+
+    <!-- audio -->
+
+  <button onclick="toggleMusic()">▶ Play / ⏸ Pause</button>
+
+<audio id="bg-music" loop>
+  <source src="audio/green-day-american-idiot.MP3" type="audio/mp3">
+</audio>
+
+<script>
+  function toggleMusic() {
+    const music = document.getElementById("bg-music");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+</script>
+
+
+
+  
+
+    <div class="container">
+        <!-- Cabeçalho -->
+         <div class="header">
+            <h1 class="main-title">Green DAY</h1>
+            <p class="main-paragraph">An american band</p>
+         </div>
+         <!-- Imagem de destaque -->
+          <div class="featured-image">
+            <figure>
+                <img src="images/green-day.jpeg" alt="Green Day: THE BAND">
+            </figure>
+          </div>
+          <!-- Biografia -->
+           <div class="biography-container">
+            <h2>About early years of the band</h2>
+            <p>Green Day is an American rock band formed in Rodeo,
+                 <span class="bold">California,</span> in 1987 by lead vocalist and guitarist
+                  Billie Joe Armstrong and bassist and backing vocalist Mike Dirnt, with drummer Tré Cool joining in 1990.</p>
+                  <p>
+                    In 1994, their major-label debut Dookie, released through Reprise Records, became a breakout success and eventually shipped over <span class="bold">20 million copies in the U.S.</span> Green Day has been credited with reigniting mainstream interest in punk rock.
+                  </p>
+           </div>
+           <!-- Container de citação -->
+            <div class="quotes-container">
+                <blockquote>
+“I couldn’t go back to the punk scene, whether we were the biggest success in the world or the biggest failure … The only thing I could do was get on my bike and go forward.”
+                </blockquote>
+                <p class="text-white">Billie Joe Armstrong</p>
+            </div>
+
+            <!-- Curisoidades -->
+             <div class="curiosidades-container">
+                <h2>Curiosities about the band</h2>
+                <ul>
+                    <li>“Green day” was California slang for a day spent smoking marijuana. The band chose it jokingly, reflecting their teenage rebellion and laid-back attitude.</li>
+                    <li>Released in 1989 when they were still called <span class="bold">Sweet Children.</span> They changed the name to Green Day to avoid confusion with another local band.</li>
+                    <li>In 2010, the album was adapted into a stage musical featuring choreography, actors, and a punk rock vibe. It received critical acclaim and Tony nominations.</li>
+                </ul>
+             </div>
+             <!-- Segunda citação -->
+              <div class="quotes-container">
+                <blockquote>
+                    Summer has come and passed <br />
+                    The innocent can never last <br />
+                    Wake me up when September ends <br />
+                    Like my father's come to pass <br />
+                    Seven years has gone so fast <br />
+                    Wake me up when September ends <br />
+                    Here comes the rain again <br />
+                    Falling from the stars <br /> 
+                    Drenched in my pain again <br />
+                    Becoming who we are <br />
+                </blockquote>
+                <p class="text-white">Green Day - Wake me up when september ends</p>
+              </div>
+                <!-- Segunda Imagem -->
+                 <div class="img-bold">
+                    <figure>
+                        <img src="images/green-day-2.jpeg" alt="Green Day band">
+                        <figcaption>The best music of the band</figcaption>
+                    </figure>
+                 </div>
+
+                 <!-- Mais informações -->
+                  <div class="moreinfo-container">
+                    <h2>More information</h2>
+                    <p>You can learn more about the band <a href="https://en.wikipedia.org/wiki/Green_Day" target="_blank">Click here</a></p>
+
+                  </div>
+
+            
+</body>
+</html>

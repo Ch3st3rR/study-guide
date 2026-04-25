@@ -1,0 +1,288 @@
+/* Fonts */
+
+/* body {
+            background-color: royalblue; 
+        }
+        h1 {
+            color: red; 
+        }
+        p {
+            color: white; 
+        }
+
+        #p1 {
+            color: tomato; 
+            font-family: "press Start 2P", "consolas", sans-serif; 
+        }
+
+        .p2 {
+            color: rgb(105, 67, 61); 
+            font-family: "consolas", sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: cyan dotted underline;
+            font-size: 18px; 
+        }
+
+*/
+
+/* Borders */
+
+/* h1 {
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: double;
+    border-left-width: 10px; 
+    border-left-color: silver; 
+}
+
+p {
+    /* border-style: dashed, dotted, double, ridge, groove, inset, outset; */
+/*  border-style: outset; 
+    border-width: 5px; 
+    border-color: gold; 
+    border-radius: 10px;
+    padding: 5px; 
+} */
+
+/* Background */
+/* body {
+    background: linear-gradient(to left, skyblue, lightgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+} */
+
+/* body {
+    /* background-image: url("myBackground.jpg"); */
+/* background-image: url("/Training/img/images.jpeg");  
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center; 
+    background-size: cover; 
+} */
+
+h1 {
+  background: linear-gradient(to left, skyblue, white);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+p {
+  background: linear-gradient(to right, skyblue, white);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Margin */
+body {
+  margin: 0px;
+}
+
+#box1 {
+  border: 5px solid;
+  width: 250px;
+  height: 250px;
+  font-size: 22px;
+  background: greenyellow;
+  /* 
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px; 
+
+    margin: 50px; 
+    */
+}
+
+#box2 {
+  border: 5px solid;
+  width: 250px;
+  height: 250px;
+  font-size: 22px;
+  background: dodgerblue;
+}
+
+/* Float
+
+/* img {
+    float: left;
+    or
+    float: right; 
+
+}
+
+/* .box {
+width: 100px;
+height: 100px;
+border: 1px solid;
+font-size: 40px;
+text-align: center; 
+background: tomato;
+
+float: left; 
+        or 
+       right;
+
+}
+       
+p {
+
+clear: both;
+
+} */
+
+/* Position */
+
+#box1 {
+  border: 1px solid;
+  height: 300px;
+  width: 300px;
+  background-color: skyblue;
+  /* position: relative;
+    top: 150px; 
+    left: 150px; */
+  /* or
+    position: relative;*/
+}
+
+#box2 {
+  border: 1px solid;
+  height: 100px;
+  width: 100px;
+  background-color: violet;
+
+  /* position: absolute; 
+    top: 150px;
+    left: 150px; */
+  /* or 
+    position: absolute;*/
+}
+
+a :link {
+  color: blueviolet;
+}
+a:visited {
+  color: grey;
+}
+a:hover {
+  color: tomato;
+}
+
+a:active {
+  color: yellow;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+button:active {
+  background-color: blue;
+}
+
+li:nth-child(1)  /* You can selected the number or put a 1n+2*/ {
+  background-color: yellow;
+}
+
+li:nth-child(even) {
+  background-color: purple;
+}
+
+li:nth-child(odd) {
+  background-color: pink;
+}
+
+/* Shadows */
+h1 {
+  text-shadow: 0px 0px 0px grey;
+}
+h1:hover {
+  box-shadow: 0px 0px 0px black;
+}
+
+/* Icons */
+.fa-facebook-official {
+    color: rgb(255, 0, 0); 
+}
+
+/* Transform */
+/* #box1 {
+    border: 4px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 225px;
+    text-align: center;
+    background: lightskyblue; 
+
+    transform: translateX(50px); 
+    transform: translateY(50px); 
+    transform: translateY(50px, 50px); 
+    transform: rotateX(180deg);  
+    transform: rotateY(180deg); 
+    transform: rotateZ(180deg); 
+    transform: scaleX(2); 
+    transform: scaleY(2); 
+    transform: scale(2, 2); 
+    transform: skewX(45deg); 
+    transform: skewY(45deg); 
+    transform: skew(20deg, 20deg); 
+
+    transform: matrix(1, 0, 0, 1, 0, 0); 
+
+} */
+
+/* Animation */
+/* #box1 {
+    width: 250px; 
+    height: 250px;
+    background: red;
+    font-size: 225px;
+    text-align: center;
+
+    animation: mySlide;
+    animation-play-state: running; 
+    animation-iteration-count: infinite; 
+    animation-delay: 0s; 
+    animation-timing-function: ease-in; 
+    animation-duration: 5s; 
+
+
+}
+
+#box1:hover {
+animation: 3s linear 0s infinite running mySlide; 
+}
+
+#box1:active {
+
+}
+
+@keyframes mySlide {
+from {margin-left: 100%;}
+to {margin-left: 0%;}
+}
+
+@keyframes myRotate {
+100%{transform: rotateX(360deg)}
+100%{transform: rotateY(360deg)}
+100%{transform: rotateZ(360deg)}
+}
+
+@keyframes myOpacity {
+    50%{opacity: 0;}
+}
+
+@keyframes myScale {
+50%{transform: scale(0.5, 0.5)}
+
+}
+
+@keyframes myColorChange {
+0%{background-color: red;}
+20%{background-color: orange;}
+40%{background-color: yellow;}
+60%{background-color: green;}
+80%{background-color: blue;}
+100%{background-color: purple;}
+} */
+
