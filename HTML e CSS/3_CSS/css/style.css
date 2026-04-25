@@ -1,0 +1,580 @@
+/* 4 - External */
+body {
+    padding-bottom: 50px;
+}
+
+h3  {
+    color: green; 
+}
+
+p {
+    font-size: 40px; 
+}
+
+
+/*color:rgb(153, 67, 67) ESSE FOI REMOVIDO DEVIDO A AULA 60  */
+/* algum comentário */
+/* mais um comentário */
+/* terceiro comentário*/
+/* REGRA: não colocar dados SENSÍVEIS no projeto, 
+motivo? inspecionar = source */
+
+/* classes */
+.paragraph {
+    background-color: black;
+    color:white;
+    padding: 10px;
+}
+
+/* ids */
+#exclusive-title{
+    background-color: rgb(107, 58, 136);
+    color:aquamarine;
+    padding: 30px;
+    font-size: 40px;
+}
+
+/* ordem das regras */
+h2 {
+    border-bottom: 2px solid red;
+}
+
+#alguma-coisa {
+     border-bottom: 4px solid rgb(55, 125, 153);
+}
+
+.titulo {
+ border-bottom: 3px solid mediumvioletred;
+} 
+
+.titulo {
+ border-bottom: 3px solid mediumvioletred;
+} 
+
+/* nome de cores */
+.color-name {
+    color:rgb(43, 78, 145)
+}
+
+/* Hex */
+.hex{
+    color: #55a398; 
+}
+
+.hex-2 {
+    color: #1c8494;
+}
+
+/* aprofundando em hex */
+.simple-hex {
+    color: #333;
+}
+
+.simple-hex-2 {
+    color: #A5F;
+}
+
+/* RGB */
+
+.rgb {
+    color: rgb(255, 76, 151); 
+}
+
+.mixed-rgb {
+    color: rgb(255, 76, 151);
+}
+
+/* RGBA */
+.rgba {
+color: rgb(0, 255, 42, 0.3);
+}
+
+
+/* HSL */
+.hsl {
+    color: hsl(100, 20%, 50%);  
+}
+
+.hsl-2 {
+    color: hsl(301, 40%, 10%);  
+}
+
+.hsl-terceiro {
+    color: hsl(288, 87%, 76%);  
+}
+
+/* Background */
+.bg{
+    background-color: #160;
+    color: rgb(24, 24, 15);
+}
+
+#h2 {
+    color: #900;
+}
+
+.bg-2{
+    background-color: rgb(400, 20, 30);
+    color: #000000;
+}
+
+/* Background opacity */
+
+.bg-opacity {
+    background-color: rgba(0, 0, 0, 0.2); /* cor preta com 20% de opacidade */
+}
+
+
+.bg-opacity-2 {
+    background-color: #900;
+    color: #000;
+    opacity: 0.8;
+    
+}
+
+/* RGBA com opacidade */
+.rgba-opacity {
+    background-color: rgba(19, 27, 13, 0.3); 
+    color:#ffffff; 
+}
+
+/* BG image */
+
+.bg-image {
+    color:#1b1347; 
+    background-image: url("../img/Jett.jpg"); 
+    padding: 30px;
+
+}
+
+/* Centralizando bg image */
+.not-centered-bg,
+.centered-bg {
+    height: 400px;
+    width: 400px;
+    background-image: url("../img/literalmente\ eu.png"); 
+}
+
+.centered-bg {
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* largura e altura */
+
+.height-width {
+    height: 200px;
+    width: 100px;
+    background-color: red;
+}
+
+.height-width-2 {
+    height: 300px;
+    background-color: #333;
+}
+
+/* padding */
+
+.without-padding,
+.padding {
+    background-color: #111;
+    color: #fff;
+}
+
+.padding {
+    background-color: #111;
+    padding: 20px; 
+}
+
+/* padding individual */
+
+/* padding individual */
+.padding-individual {
+  background-color: #222;
+  color: #fff;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+/* Shorthand padding */
+.shorthand-padding {
+  background-color: #444;
+  padding: 6px 12px 18px 24px;
+}
+
+.shorthand-padding-2 {
+  background-color: #555;
+  padding: 10px 20px;
+}
+
+/* padding com width */
+.without-padding-box {
+  background-color: #444;
+  color: #fff;
+  width: 400px;
+  padding: 50px;
+  /* Sem border-box: padding será somado à largura */
+}
+
+.with-border-box {
+  background-color: #666;
+  color: #fff;
+  width: 400px;
+  padding: 50px;
+  box-sizing: border-box; /* Aqui o padding fica dentro dos 400px */
+}
+
+
+/* * {
+  box-sizing: border-box;
+}
+
+💡 Dica bônus:
+Se quiser aplicar box-sizing: border-box para todos os elementos do projeto, adicione isso no início do CSS: */
+
+.border {
+    border: 5px solid #347;
+    padding: 30px; 
+}
+
+.border-2 {
+    border: 2px dotted #659;
+    padding: 30px; 
+}
+
+/* border individual */
+.border-left {
+    border-left: 3px solid red;
+    background-color: #632e2e;
+    padding: 25px; 
+}
+
+.border-right {
+    border-right: 3px solid red;
+    background-color: #793232;
+    padding: 25px; 
+}
+
+.border-bottom {
+    border-bottom: 5px double rgb(155, 87, 87);
+    background-color: rgb(144, 159, 204);
+    padding: 20px;
+}
+
+/* borda arredondada */
+.rouder-p {
+    border: 4px solid rgb(61, 61, 117);
+    background-color: #000;
+    color: rgb(128, 128, 255);
+    padding: 15px;
+    border-radius: 25px;
+
+}
+
+.rouder-p-2 {
+    background-color: #000;
+    color: rgb(142, 142, 255);
+    padding: 15px;
+    border-radius: 25px;
+
+}
+
+/* margem */
+.margin {
+    margin: 10px;
+    background-color: #222;
+
+}
+
+.margin-top {
+    margin-top: 50px;
+    background-color: #160;
+    padding: 20px;
+
+}
+
+.margin-shorthand {
+    background-color: #666;
+    margin: 5px 10px 15px 20px;
+
+}
+
+/* Box Model */
+.box-model {
+    margin: 50px;
+    padding: 30px 50px;
+    border: 3px solid purple;
+    border-radius: 7px;
+     left: 40px;
+    right: 30px;
+    width: 550px;
+    height: 100px;
+}
+
+/* desafio 3 */
+
+.centralizar {
+    height: 500px; 
+    width: 600px; 
+    margin: 110px;
+    padding: 50px;
+    background-image:url("../img/Jett.jpg"); 
+}
+
+.centralizar {
+    height: 500px;
+    width: 600px;
+    margin: 110px;
+    padding: 50px;
+    background-image: url("../img/Jett.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #347;
+    border-radius: 10px; 
+}
+
+.borda-imagem {
+    border: 5px solid red;
+    border-radius: 10px;
+}
+
+
+
+/* Text Allign */
+.text-alinhed {
+text-align: right;
+}
+
+.container-center {
+    text-align: center;
+    width: 300px;
+    border: 1px solid red;
+}
+
+/* Text Decoration */
+.underline {
+    text-decoration: underline;
+}
+
+.line-trough {
+    text-decoration: line-through;
+}
+
+.remove-underline {
+    text-decoration: none;
+    color: #347;
+}
+
+/* text transform */
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+/* letter spacing */
+.spacing {
+    letter-spacing: 5px;
+}
+
+/* Fonts */
+.serif {
+    font-family: Georgia;
+}
+
+.sans-serif {
+    font-family: Helvetica;
+}
+
+.monospace {
+    font-style: "courier new";
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+/* text style */
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+/* font weight */
+.thin, .bold .bolder {
+    font-family: Helvetica;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 900; 
+}
+
+/* font size */
+.small {
+    font-size: 6px; 
+}
+
+.big {
+    font-size: 78px;
+}
+
+/* Display */
+
+.inline-box {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(168, 33, 157);
+    margin: 10px;
+    display: inline-block;
+}
+
+.block {
+    background-color: #333;
+    display: block;
+    margin: 10px; 
+}
+
+.invisible {
+    display: none;
+}
+
+/* static */
+
+.static {
+    position: static;
+    background-color: #391;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+}
+
+/* relative */
+.relative {
+    position: relative;
+    background-color: #409;
+    color: #ffffff;
+    width: 100px; 
+    height: 100px;
+    top: 100px;
+    left: 40px; 
+}
+
+/* absolute */
+.absolute {
+    position: absolute;
+    background-color: rgb(158, 115, 115);
+    color: #ffffff;
+    width: 100px; 
+    height: 100px;
+}
+
+/* Absolute e relative */
+.relative-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+    position: relative; 
+}
+
+.absoluteone, 
+.aboslutetwo {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(139, 64, 173);
+    position: absolute;  
+}
+
+.absoluteone {
+    top: 10px;
+    right: 10px;
+}
+
+.aboslutetwo {
+    bottom: 10px;
+    left: 10px;
+}
+
+
+/* fixed */
+.fixed {
+    width: 300px;
+    height: 300px;
+    background-color: #347;
+    border: 1px solid rgb(105, 71, 71);
+    margin-top: 120px;
+    position: fixed;
+    top: 50px; 
+    right: 50px; 
+
+}
+
+/* Sticky */
+.sticky {
+    width: 100px;
+    height: 100px;
+    border-color: #af7777;
+    border: 1px solid green;
+    position: sticky;
+    top: 10px;
+}
+
+/* Z index */
+.relative-container.z-index-demo {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  margin-top: 50px;
+}
+
+.absolute3,
+.absolute4,
+.absolute5 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+/* Z-index em ação */
+.absolute3 {
+  top: 0;
+  left: 0;
+  background-color: #A5F;
+  z-index: 3;
+}
+
+.absolute4 {
+  top: 20px;
+  left: 20px;
+  background-color: rgb(102, 34, 99);
+  z-index: 2;
+}
+
+.absolute5 {
+  top: 40px;
+  left: 40px;
+  background-color: #1f081d;
+  z-index: 1;
+}
